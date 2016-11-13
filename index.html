@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2014-2015臺灣新年數鳥嘉年華</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v3.js"></script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+   <div class="mapbox">
+       <div id="map">
+     
+       </div>
+   </div>
+    <script>
+        var map;
+
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 24, lng: 120},
+            zoom: 7,
+                        style: [
+              {
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#282f46"
+                  }
+                ]
+              },
+              {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#746855"
+                  }
+                ]
+              },
+              {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "color": "#242f3e"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.locality",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#d59563"
+                  }
+                ]
+              },
+              {
+                "featureType": "landscape.man_made",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#7b773c"
+                  }
+                ]
+              },
+              {
+                "featureType": "landscape.natural",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#263542"
+                  }
+                ]
+              },
+              {
+                "featureType": "landscape.natural.terrain",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#2d293f"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#d59563"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.attraction",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#3c8074"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#2c5f56"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#6b9a76"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#38414e"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                  {
+                    "color": "#212a37"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#9ca5b3"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#746855"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                  {
+                    "color": "#1f2835"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#f3d19c"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#2f3948"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit.station",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#d59563"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#17263c"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#515c6d"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "color": "#17263c"
+                  }
+                ]
+              }
+            ],
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          });
+            
+         
+            // GeoJSON file
+            var url = 'circle.geojson';
+            var mapElement = document.getElementById("mapDiv");
+ 
+            // 載入 GeoJSON 資料
+            map.data.loadGeoJson(url);
+            
+        }
+    
+      
+        
+        
+        
+        
+ 
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA95Cmfey509vp9ffcrOXICQmM7ZxsESm0&callback=initMap"
+        async defer></script>
+  </body>
+</html>
