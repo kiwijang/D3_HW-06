@@ -55,7 +55,62 @@
         "CommonName": "XX雲雀",
         "Quantity": "40"
     },
-    
+    {
+        "SerialNo": "100",
+        "SurveyDate": "2015/1/9",
+        "SurveyGroup": "邱嘉德、楊邵閔",
+        "County": "宜蘭縣",
+        "Township": "三星鄉",
+        "Location": "大洲",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Ardeidae",
+        "ScienceName": "Ardea alba",
+        "CommonName": "大白鷺",
+        "Quantity": "2"
+    },
+    {
+        "SerialNo": "100",
+        "SurveyDate": "2015-01-09T00:00:00",
+        "SurveyGroup": "邱嘉德、楊邵閔",
+        "County": "宜蘭縣",
+        "Township": "三星鄉",
+        "Location": "大洲",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Ardeidae",
+        "ScienceName": "Ardea alba",
+        "CommonName": "大白鷺",
+        "Quantity": "2"
+    },
+    {
+        "SerialNo": "1000",
+        "SurveyDate": "2015/1/5",
+        "SurveyGroup": "黃淑貞、陳懿文、陳新政、黃建華、江國明、簡美祺",
+        "County": "高雄市",
+        "Township": "茂林區",
+        "Location": "D",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Apodidae",
+        "ScienceName": "Apus nipalensis",
+        "CommonName": "小雨燕",
+        "Quantity": "1"
+    },
+    {
+        "SerialNo": "1000",
+        "SurveyDate": "2015-01-05T00:00:00",
+        "SurveyGroup": "黃淑貞、陳懿文、陳新政、黃建華、江國明、簡美祺",
+        "County": "高雄市",
+        "Township": "茂林區",
+        "Location": "D",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Apodidae",
+        "ScienceName": "Apus nipalensis",
+        "CommonName": "小雨燕",
+        "Quantity": "1"
+    },
     {
         "SerialNo": "10000",
         "SurveyDate": "2014/12/28",
@@ -202,9 +257,7 @@
         "SurveyGroup": "崔懷空、黃如秀、盧澤人、周振傑、謝德全、呂季樺、蘇秀芬、顏定乾、吳信儀",
         "County": "新北市",
         "Township": "烏來區",
-        "Location": "忠治大桶山
-        
-        農場",
+        "Location": "忠治大桶山農場",
         "Latitude": "24.887133",
         "Longitude": "121.555867",
         "FamilyName": "Leiothrichidae",
@@ -646,7 +699,34 @@
         "CommonName": "繡眼畫眉",
         "Quantity": "15"
     },
-   
+    {
+        "SerialNo": "1002",
+        "SurveyDate": "2015/1/5",
+        "SurveyGroup": "黃淑貞、陳懿文、陳新政、黃建華、江國明、簡美祺",
+        "County": "高雄市",
+        "Township": "茂林區",
+        "Location": "E",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Apodidae",
+        "ScienceName": "Apus nipalensis",
+        "CommonName": "小雨燕",
+        "Quantity": "2"
+    },
+    {
+        "SerialNo": "1002",
+        "SurveyDate": "2015-01-05T00:00:00",
+        "SurveyGroup": "黃淑貞、陳懿文、陳新政、黃建華、江國明、簡美祺",
+        "County": "高雄市",
+        "Township": "茂林區",
+        "Location": "E",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Apodidae",
+        "ScienceName": "Apus nipalensis",
+        "CommonName": "小雨燕",
+        "Quantity": "2"
+    },
     {
         "SerialNo": "10020",
         "SurveyDate": "2015/1/11",
@@ -2831,7 +2911,90 @@
         "CommonName": "藍腹鷴",
         "Quantity": "1"
     },
-    
+    {
+        "SerialNo": "10091",
+        "SurveyDate": "2015-01-05T00:00:00",
+        "SurveyGroup": "黃淑貞、陳懿文、陳新政、黃建華、江國明、簡美祺",
+        "County": "高雄市",
+        "Township": "茂林區",
+        "Location": "A",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Muscicapidae",
+        "ScienceName": "Monticola solitarius",
+        "CommonName": "藍磯鶇",
+        "Quantity": "2"
+    },
+    {
+        "SerialNo": "10091",
+        "SurveyDate": "2015/1/5",
+        "SurveyGroup": "黃淑貞、陳懿文、陳新政、黃建華、江國明、簡美祺",
+        "County": "高雄市",
+        "Township": "茂林區",
+        "Location": "A",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Muscicapidae",
+        "ScienceName": "Monticola solitarius",
+        "CommonName": "藍磯鶇",
+        "Quantity": "2"
+    },
+    {
+        "SerialNo": "10092",
+        "SurveyDate": "2015/1/1",
+        "SurveyGroup": "石明卿、劉芝芬、施勵強、羅英昌、劉國棟、夏尊湯、黃美玉、楊懿如、葉慧卿、李月霞、鄧文銘、羅光湧、陳麗敏、施岳儀、覃秀玲、林杰鴻、張乃悅、林香妘、林家岑",
+        "County": "花蓮縣",
+        "Township": "秀林鄉",
+        "Location": "A",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Muscicapidae",
+        "ScienceName": "Monticola solitarius",
+        "CommonName": "藍磯鶇",
+        "Quantity": "1"
+    },
+    {
+        "SerialNo": "10092",
+        "SurveyDate": "2015-01-01T00:00:00",
+        "SurveyGroup": "石明卿、劉芝芬、施勵強、羅英昌、劉國棟、夏尊湯、黃美玉、楊懿如、葉慧卿、李月霞、鄧文銘、羅光湧、陳麗敏、施岳儀、覃秀玲、林杰鴻、張乃悅、林香妘、林家岑",
+        "County": "花蓮縣",
+        "Township": "秀林鄉",
+        "Location": "A",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Muscicapidae",
+        "ScienceName": "Monticola solitarius",
+        "CommonName": "藍磯鶇",
+        "Quantity": "1"
+    },
+    {
+        "SerialNo": "10093",
+        "SurveyDate": "2015-01-05T00:00:00",
+        "SurveyGroup": "黃淑貞、陳懿文、陳新政、黃建華、江國明、簡美祺",
+        "County": "高雄市",
+        "Township": "茂林區",
+        "Location": "C",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Muscicapidae",
+        "ScienceName": "Monticola solitarius",
+        "CommonName": "藍磯鶇",
+        "Quantity": "1"
+    },
+    {
+        "SerialNo": "10093",
+        "SurveyDate": "2015/1/5",
+        "SurveyGroup": "黃淑貞、陳懿文、陳新政、黃建華、江國明、簡美祺",
+        "County": "高雄市",
+        "Township": "茂林區",
+        "Location": "C",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Muscicapidae",
+        "ScienceName": "Monticola solitarius",
+        "CommonName": "藍磯鶇",
+        "Quantity": "1"
+    },
     {
         "SerialNo": "10094",
         "SurveyDate": "2015/1/10",
@@ -3056,7 +3219,34 @@
         "CommonName": "小雨燕",
         "Quantity": "19"
     },
-   
+    {
+        "SerialNo": "10100",
+        "SurveyDate": "2015/1/5",
+        "SurveyGroup": "吳正文、彭淑貞",
+        "County": "屏東縣",
+        "Township": "牡丹鄉",
+        "Location": "大梅溪",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Muscicapidae",
+        "ScienceName": "Monticola solitarius",
+        "CommonName": "藍磯鶇",
+        "Quantity": "1"
+    },
+    {
+        "SerialNo": "10100",
+        "SurveyDate": "2015-01-05T00:00:00",
+        "SurveyGroup": "吳正文、彭淑貞",
+        "County": "屏東縣",
+        "Township": "牡丹鄉",
+        "Location": "大梅溪",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Muscicapidae",
+        "ScienceName": "Monticola solitarius",
+        "CommonName": "藍磯鶇",
+        "Quantity": "1"
+    },
     {
         "SerialNo": "10101",
         "SurveyDate": "2014-12-28T00:00:00",
@@ -3309,7 +3499,34 @@
         "CommonName": "藍磯鶇",
         "Quantity": "2"
     },
-   
+    {
+        "SerialNo": "1011",
+        "SurveyDate": "2015-01-03T00:00:00",
+        "SurveyGroup": "王龍兒、吳正文 彭淑貞 汪雨涵、陳怡君、顧德生 李鴻信",
+        "County": "屏東縣",
+        "Township": "霧台鄉",
+        "Location": "大武",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Apodidae",
+        "ScienceName": "Apus nipalensis",
+        "CommonName": "小雨燕",
+        "Quantity": "13"
+    },
+    {
+        "SerialNo": "1011",
+        "SurveyDate": "2015/1/3",
+        "SurveyGroup": "王龍兒、吳正文 彭淑貞 汪雨涵、陳怡君、顧德生 李鴻信",
+        "County": "屏東縣",
+        "Township": "霧台鄉",
+        "Location": "大武",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Apodidae",
+        "ScienceName": "Apus nipalensis",
+        "CommonName": "小雨燕",
+        "Quantity": "13"
+    },
     {
         "SerialNo": "10110",
         "SurveyDate": "2014/12/28",
@@ -3898,7 +4115,34 @@
         "CommonName": "藍磯鶇",
         "Quantity": "1"
     },
-    
+    {
+        "SerialNo": "1013",
+        "SurveyDate": "2015-01-05T00:00:00",
+        "SurveyGroup": "吳正文、彭淑貞",
+        "County": "屏東縣",
+        "Township": "牡丹鄉",
+        "Location": "大梅溪",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Apodidae",
+        "ScienceName": "Apus nipalensis",
+        "CommonName": "小雨燕",
+        "Quantity": "4"
+    },
+    {
+        "SerialNo": "1013",
+        "SurveyDate": "2015/1/5",
+        "SurveyGroup": "吳正文、彭淑貞",
+        "County": "屏東縣",
+        "Township": "牡丹鄉",
+        "Location": "大梅溪",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Apodidae",
+        "ScienceName": "Apus nipalensis",
+        "CommonName": "小雨燕",
+        "Quantity": "4"
+    },
     {
         "SerialNo": "10130",
         "SurveyDate": "2015/1/3",
@@ -4515,7 +4759,34 @@
         "CommonName": "小雨燕",
         "Quantity": "8"
     },
-   
+    {
+        "SerialNo": "10150",
+        "SurveyDate": "2015/1/9",
+        "SurveyGroup": "邱嘉德、楊邵閔",
+        "County": "宜蘭縣",
+        "Township": "三星鄉",
+        "Location": "大洲",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Accipitridae",
+        "ScienceName": "Buteo buteo",
+        "CommonName": "鵟",
+        "Quantity": "1"
+    },
+    {
+        "SerialNo": "10150",
+        "SurveyDate": "2015-01-09T00:00:00",
+        "SurveyGroup": "邱嘉德、楊邵閔",
+        "County": "宜蘭縣",
+        "Township": "三星鄉",
+        "Location": "大洲",
+        "Latitude": "",
+        "Longitude": "",
+        "FamilyName": "Accipitridae",
+        "ScienceName": "Buteo buteo",
+        "CommonName": "鵟",
+        "Quantity": "1"
+    },
     {
         "SerialNo": "10151",
         "SurveyDate": "2014-12-24T00:00:00",
