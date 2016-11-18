@@ -1,0 +1,67 @@
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+body {
+    background-color: black;
+}
+
+h1 {
+    color: aliceblue;
+}
+#map {
+        height: 100%;
+        width: 100%;
+      }
+
+.mapbox {
+    width: 800px;
+    height: 600px;
+    display: block;
+    white-space: nowrap;
+}
+
+.gm-style-cc {
+    display: none;
+}
+
+#info-box {
+    font-family: sans-serif, 微軟正黑體;
+    background-color: #d32a51;
+    height: 20px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1em;
+    color: aliceblue;
+}
+
+.stations, .stations svg { position: absolute; }
+
+.stations svg { width: 120px; height: 30px; padding-right: 100px; font: 12px sans-serif; }
+
+/*.stations circle { fill: yellow; stroke: black; stroke-width: 1.5px; }*/
+
+/* 按鈕美化 */
+        input {
+            font-family: sans-serif, 微軟正黑體;
+            background-color: #5a2e1d;
+            border: 2px solid #5a2e1d;
+            color: #f0f0f0;
+            padding: .5em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            margin: 4px 2px;
+            cursor: pointer;
+             -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+        input:hover {
+            font-family: sans-serif, 微軟正黑體;
+            background-color: white;
+            border: 2px solid #5a2e1d;
+            color: #5a2e1d;
+        } 

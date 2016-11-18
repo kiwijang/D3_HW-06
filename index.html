@@ -4,7 +4,7 @@
     <title>2014-2015臺灣新年數鳥嘉年華</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-    <script src="https://d3js.org/d3.v3.js"></script>
+    <script src="//d3js.org/d3.v3.js"></script>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
@@ -15,7 +15,6 @@
       </div><br><br><br>
     <script>
         var map;
-
         function initMap() {
           map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: 23.5, lng: 120},
@@ -240,23 +239,22 @@
                 ]
               }       
             ];
-
-        
-        // Create a new StyledMapType object, passing it the array of styles,
-          // as well as the name to be displayed on the map type control.
-          var styledMap = new google.maps.StyledMapType(styles,
-            {name: "Styled Map"});
-        //Associate the styled map with the MapTypeId and set it to display.
-          map.mapTypes.set('map_style', styledMap);
-          map.setMapTypeId('map_style');            
-
-           
-
+            // Create a new StyledMapType object, passing it the array of styles,
+              // as well as the name to be displayed on the map type control.
+              var styledMap = new google.maps.StyledMapType(styles,
+                {name: "Styled Map"});
+            //Associate the styled map with the MapTypeId and set it to display.
+              map.mapTypes.set('map_style', styledMap);
+              map.setMapTypeId('map_style');    
+            
+        };
+ 
+           // 用d3讀取json
             d3.json("bird.json", function(dataSet){
-                    bind(dataSet); 
-                    render(dataSet);
-                    btnList(dataSet);    
-            });
+                        bind(dataSet); 
+                        render(dataSet);
+                        btnList(dataSet); 
+                });
 
             function bind(dataSet){
                 var selection = d3.select("svg")
@@ -264,8 +262,8 @@
                     .data(dataSet);
                 selection.enter().append("circle");
                 selection.exit().remove();
-            };        
-            
+            };  
+        
             function render(dataSet){
                 
               var overlay = new google.maps.OverlayView();
@@ -285,14 +283,8 @@
                       .attr("r", 10)
                       .attr("cx", padding)
                       .attr("cy", padding)
-                      .attr("fill","rgba(213, 149, 99, 0.35)");
-                  // 加入標籤
-                  marker.append("svg:text")
-                      .attr("x", padding + 7)
-                      .attr("y", padding)
-                      .attr("dy", ".31em")
-                      .text(function(d) { return d.value.Township; });
-                  // transform function. 指定每個點的座標.
+                      .attr("fill","rgba(213, 149, 99, 0.1)");
+
                   function transform(d) {
                     d = new google.maps.LatLng(parseFloat(d.value.Latitude), parseFloat(d.value.Longitude));
                     d = projection.fromLatLngToDivPixel(d);
@@ -305,71 +297,61 @@
               // 將 overlay 加入到 google 地圖
               overlay.setMap(map);            
             };
-            
-        //8.製作按鈕
-    //8-0.資料不重複 dataSet.map
-        function btnList(dataSet){
-            //industryArr: 鳥類別陣列(包含重複項目)           
-            var CommonNameArr = dataSet.map(function(d){
-               return d.CommonName;
-            });  
-            console.log(CommonNameArr);
-            //uniqueIndustryArr: 鳥類別陣列(無重複項目) 
-            var uniqueCommonNameArr = unique(CommonNameArr);
-            
-            //filterIndustryArr: 鳥類別陣列(去除空白項目) 
-            var filterCommonNameArr = uniqueCommonNameArr.filter(function(d){
-               return d!=""; 
-            });
-            //8-1.畫出按鈕們
-            var selection = d3.select("body")
-            .selectAll("div").data(filterCommonNameArr);
-            selection.enter().append("input")
-                              .attr({
-                              type: "button",
-                              value: function (d) {
-                                return d;
-                              }
-                            })
-                              .on("click", function (d) {
-                              //當鳥類別按鈕按下時執行
-                              update(d);
-                            });
-            function update(CommonName_N) {
-              //過濾鳥類別符合者
-              var newDataSet = dataSet.filter(function (d) {
-                return d.CommonName === CommonName_N;
-              });
-              //重新整理bind,render
-              bind(newDataSet);
-              render(newDataSet);
-            };
-        //8-1.定義unique(array)去看每個array，如果沒出現過就加到n中 
-            function unique(array){
-                var n = []; 
+            //8.製作按鈕
+            //8-0.資料不重複 dataSet.map
+            function btnList(dataSet){
+                //industryArr: 鳥類別陣列(包含重複項目)
+                var CommonNameArr = dataSet.map(function(d){
+                   return d.CommonName;
+                });  
+                console.log(CommonNameArr);
+                //uniqueIndustryArr: 鳥類別陣列(無重複項目) 
+                var uniqueCommonNameArr = unique(CommonNameArr);
+                //filterIndustryArr: 鳥類別陣列(去除空白項目) 
+                var filterCommonNameArr = uniqueCommonNameArr.filter(function(d){
+                   return d!=""; 
+                });
+                //8-1.畫出按鈕們
+                var selection = d3.select("body")
+                .selectAll("div").data(filterCommonNameArr);
+                selection.enter().append("input")
+                                  .attr({
+                                  type: "button",
+                                  value: function (d) {
+                                    return d;
+                                  }
+                                })
+                                  .on("click", function (d) {
+                                  //當鳥類別按鈕按下時執行
+                                  update(d);
+                                });
+                function update(CommonName_N) {
+                  //過濾鳥類別符合者
+                  var newDataSet = dataSet.filter(function (d) {
+                    return d.CommonName === CommonName_N;
+                  });
+                  //重新整理bind,render
+                  bind(newDataSet);
+                  render(newDataSet);
+                };
+            //8-1.定義unique(array)去看每個array，如果沒出現過就加到n中 
+                function unique(array){
+                    var n = []; 
 
-                for(var i = 0; i < array.length; i++){
-                    if(n.indexOf(array[i]) === -1){
-                        n.push(array[i]);
-                    }
-                } 
-                return n;
-            }  
-          
-            };
-        };
-       
-        
-        
-        
-        
+                    for(var i = 0; i < array.length; i++){
+                        if(n.indexOf(array[i]) === -1){
+                            n.push(array[i]);
+                        }
+                    } 
+                    return n;
+                }  
 
+                };
         
-        
-        
+    
         
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA95Cmfey509vp9ffcrOXICQmM7ZxsESm0&callback=initMap"
-        async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA95Cmfey509vp9ffcrOXICQmM7ZxsESm0&callback=initMap"
+        async defer></script>  
   </body>
 </html>
