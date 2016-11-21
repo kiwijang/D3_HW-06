@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-  <h1>&nbsp;2014-2015臺灣新年數鳥嘉年華/樣區圓+鳥分布</h1>
+  <div class="all">
+  <h1>2014-2015臺灣新年數鳥嘉年華/樣區圓+鳥分布</h1>
    <div class="mapbox">
        <div id="info-box">鼠標滑到紅圈→樣區名稱</div>
        <div id="map"></div>
       </div><br><br><br>
+      <div class="left"></div>
     <script>
         var map;
         function initMap() {
@@ -283,7 +285,7 @@
                       .attr("r", 10)
                       .attr("cx", padding)
                       .attr("cy", padding)
-                      .attr("fill","rgba(213, 149, 99, 0.1)");
+                      .attr("fill","rgba(213, 149, 99, 0.6)");
 
                   function transform(d) {
                     d = new google.maps.LatLng(parseFloat(d.value.Latitude), parseFloat(d.value.Longitude));
@@ -296,7 +298,7 @@
               };
               // 將 overlay 加入到 google 地圖
               overlay.setMap(map);            
-            };
+            };        
             //8.製作按鈕
             //8-0.資料不重複 dataSet.map
             function btnList(dataSet){
@@ -313,9 +315,9 @@
                 });
                 //8-1.畫出按鈕們
                 var selection = d3.select("body")
-                .selectAll("div").data(filterCommonNameArr);
+                .select(".left").selectAll("div").data(filterCommonNameArr);
                 selection.enter().append("input")
-                                  .attr({
+                                  .attr({  
                                   type: "button",
                                   value: function (d) {
                                     return d;
@@ -330,6 +332,7 @@
                   var newDataSet = dataSet.filter(function (d) {
                     return d.CommonName === CommonName_N;
                   });
+                    d3.selectAll("circle").remove();//9.update完remove舊資料(qwq)/*   
                   //重新整理bind,render
                   bind(newDataSet);
                   render(newDataSet);
@@ -347,11 +350,10 @@
                 }  
 
                 };
-        
     
-        
-    </script>
+               </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA95Cmfey509vp9ffcrOXICQmM7ZxsESm0&callback=initMap"
-        async defer></script>  
+        async defer></script>
+        </div>  
   </body>
 </html>
