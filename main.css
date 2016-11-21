@@ -4,7 +4,7 @@ html, body {
         padding: 0;
       }
 body {
-    background-color: #ffffff;
+    background-color: #fffdcb;
     display: flex;
     justify-content: center;
 }
@@ -14,16 +14,20 @@ body {
     box-shadow: 5px 5px 10px gray;
     padding: 20px;
     margin: 20px;
-    width: 800px;
+    width: 600px;
     height: 1000px;
     border: 10px solid black;
 }
 
 h1 {
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    width: 150px;
     font-family: sans-serif, 微軟正黑體;
     color: #000000;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     letter-spacing: .3em;
     padding: 20px
@@ -34,8 +38,8 @@ h1 {
       }
 
 .mapbox {
-    width: 800px;
-    height: 600px;
+    width: 600px;
+    height: 500px;
     display: block;
     white-space: nowrap;
 }
